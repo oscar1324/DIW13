@@ -52,6 +52,7 @@ h3 {
 .header .contenedor{
 
     /*Aquí va el posicionamiento grid */
+   
 
 }
 .header .menu {
@@ -83,6 +84,8 @@ h3 {
 @media (min-width: 768px) {
     .nosotros {
             /*Aquí va el posicionamiento grid */
+            display: grid;
+            grid-template-columns: 50% 50%;
     }
 }
 .contenido-nosotros {
@@ -98,6 +101,10 @@ h3 {
 /* Venta */
 .venta {
        /*Aquí va el posicionamiento grid */
+       display: grid;
+       grid-template-columns: 30% 30% 30%;
+       grid-template-rows: 30% 30% 30%;
+       falta
 }
 .venta img {
     width: 100%;
@@ -172,6 +179,9 @@ h3 {
 @media (min-width:768px) {
     .footer .contenedor {
             /*Aquí va el posicionamiento grid */
+            display: grid;
+            grid-template-columns: 25% 25% 25% ;
+            grid-template-columns: 1fr 1fr 2fr;
     }
 }
 
@@ -184,10 +194,18 @@ h3 {
 
 .footer .contenedor-casas {
         /*Aquí va el posicionamiento grid */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
 }
 
 .footer .contenedor-casas .casa {
         /*Aquí va el posicionamiento grid */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1rem;
+        
 }
 .footer .contenedor-casas .casa p {
     margin: 0;
@@ -199,25 +217,3 @@ h3 {
     padding: 1rem;
 }
 
-
-
-/*CSS GRID*/
-/*primer div*/
-.nosotros{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-
-
-
-/*Div centrar, tabla 33*/
-.contenedor{
-
-}
-.venta{
-    
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 30% 30% 30%;
-}
