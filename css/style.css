@@ -52,11 +52,17 @@ h3 {
 .header .contenedor{
 
     /*Aquí va el posicionamiento grid */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
    
 
 }
 .header .menu {
         /*Aquí va el posicionamiento grid */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        
 }
 @media (min-width:992px) {
     .header .contenedor {
@@ -64,9 +70,13 @@ h3 {
     }
     .header .nombre-sitio {
             /*Aquí va el posicionamiento grid */
+            display: grid;
+            grid-column:1/span 3;
     }
     .header .menu {
             /*Aquí va el posicionamiento grid */
+            grid-column-end:5 ;
+            gap: 1rem;
     }
 }
 
@@ -102,20 +112,27 @@ h3 {
 .venta {
        /*Aquí va el posicionamiento grid */
        display: grid;
-       grid-template-columns: 30% 30% 30%;
-       grid-template-rows: 30% 30% 30%;
-       falta
+       grid-template-columns: 40% 30% 30%;
+      /* grid-template-rows: 50% 50%;*/
 }
 .venta img {
     width: 100%;
 }
+/* imagen grande mas texto*/
 .destacada {
         /*Aquí va el posicionamiento grid */
+        display: grid;
+
+        /*       
+        grid-template-columns: 1fr 1fr;
+        grid-column-start:1 ;*/
+           
 }
 @media screen and (min-width:700px) {
 
     .destacada {
             /*Aquí va el posicionamiento grid */
+            grid-auto-flow: column;
     }
 }
 
@@ -124,10 +141,13 @@ h3 {
 @media (min-width:768px) {
     .venta {
             /*Aquí va el posicionamiento grid */
+          
     }
     
     .destacada {
             /*Aquí va el posicionamiento grid */
+            
+            
     }  
 }
 
