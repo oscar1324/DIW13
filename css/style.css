@@ -110,23 +110,18 @@ h3 {
 
 /* Venta */
 .venta {
-       /*Aquí va el posicionamiento grid */
-       display: grid;
-       grid-template-columns: 40% 30% 30%;
-      /* grid-template-rows: 50% 50%;*/
+    /*Aquí va el posicionamiento grid */
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
 }
 .venta img {
-    width: 100%;
+ width: 100%;
 }
-/* imagen grande mas texto*/
 .destacada {
-        /*Aquí va el posicionamiento grid */
-        display: grid;
-
-        /*       
-        grid-template-columns: 1fr 1fr;
-        grid-column-start:1 ;*/
-           
+     /*Aquí va el posicionamiento grid */
+     grid-template-columns: 50% 50%;
+     grid-column-start: 1;
+     grid-column-end: 3;
 }
 @media screen and (min-width:700px) {
 
